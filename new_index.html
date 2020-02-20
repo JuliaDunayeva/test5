@@ -50,4 +50,15 @@ A text with a deleted part, and a new, inserted part<br>
 
 	<code>function-thing blah_blah(parameter-thing something_and_nothing)</code>
 
+	<p>Click the button to set the color of <var id="myVar">this text</var> to red.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
 </body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myVar");
+  x.style.color = "red";
+}
+</script>
