@@ -5,11 +5,37 @@
 	</head>
 	
 	<body>
-	<p> This is a perfect example of a colored span: the first span <span style="color: green"> 
+		<p> This is a perfect example of a colored span: the first span <span style="color: green"> 
 	is green </span> and the second span <span style="color: red">is red</span></p>
-	<p> This is <em>emphasized</em> text</p>
-	<p>This is a <abbr title="test"><strong><mark>marked</mark></strong></abbr> text</p>
+		<p> This is <em>emphasized</em> text</p>
+		<p>This is a <abbr title="test"><strong><mark>marked</mark></strong></abbr> text</p>
+		
+	<p> This text will be from left to right</p>
+	<p> <bdo dir="rtl">This text will be from left to right</bdo></p>
+	<p> This text will be from left to right</p>
+	<p> <bdo dir="ltr">this</bdo></p>
+	<p> This is <dfn>special</dfn> text</p>
+	<p>This is for a different source</p>
+	<blockquote><q>To control how linear layout aligns all the views it contains, set a value for android:gravity.
+	For example, the snippet above sets android:gravity to "center". 
+	The value you set affects both horizontal and vertical alignment of all child views within the single row or column.</q></blockquote>
+	<p><cite> Android Developer Website<cite></p>
+	<p>The code
+	<code width="100" height="300">
+		 super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_display_message);
+            Intent intent = getIntent();
+            String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+            TextView txt = (TextView) findViewById(R.id.messageView);
+            txt.setText(message);
+	</code>
+	</p>
+	<p>Enter the <kbd>this is inside element</kbd> text</p>
+
+	<p>document.write("user-name")</p>
+	<p><code>document.write("user-name")</code></p>
+	<p><code>document.write("<var>xPos</var>")</code></p>
+	<i>1200 St-Laurent Blvd</i>
+	<address>1200 St-Laurent Blvd</address>
 	</body>
-
-
 </html>
