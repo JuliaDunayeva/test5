@@ -59,6 +59,11 @@ A text with a deleted part, and a new, inserted part<br>
 <script>
 function myFunction() {
   var x = document.getElementById("myVar");
-  x.style.color = "red";
+  if (x.style.color != "red"){
+		x.style.color = "red";
+	}
+	else {
+		x.style.color="blue";
+	}
 }
 </script>
