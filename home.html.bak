@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Hello Person/Thing</title>
+  </head>
+  <body>
+    <center>
+      <p> Welcome <b>Persons</b> <i>and/or</i> <b>Things</b> </p>
+      This page is about nothing. Nothing to do but sit and twiddle your
+      thumbs...</center>
+    <div align="center"> <tt>div this!</tt> | <tt>and this</tt> </div>
+    <p> <del>sad</del> <ins>funny</ins> text </p>
+    <p> <big>Something big</big> </p>
+    <small>Something small</small>
+    <p></p>
+    
+  </body>
+</html>
