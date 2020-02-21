@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<!--comment header -->
 
 <header>
 <title>Daves new Awesome Page</title>
 </header>
 
+<html>
 <body>
 <section>
 <p><h2>section 1</h2></p>
@@ -52,10 +54,32 @@ A text with a deleted part, and a new, inserted part<br>
 
 	<p>Click the button to set the color of <var id="myVar">this text</var> to red.</p>
 
-<button onclick="myFunction()">Try it</button>
+<br>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<textarea id="myText">Something is here...</textarea>
+
+<button type="button" onclick="processText()">Try me!</button>
+
+<p id="demo"></p>
 
 
-</body>
+
+<script>
+
+function processText(){
+
+	var x = document.getElementById("myText").value;
+	if (x=="demo") {
+	<p>entered Demo text</p>;
+}
+else{
+	<p>entered unknown text</p>;
+}
+   document.getElementById("demo").innerHTML = x;
+}
+</script>
+
 <script>
 function myFunction() {
   var x = document.getElementById("myVar");
@@ -66,4 +90,7 @@ function myFunction() {
 		x.style.color="blue";
 	}
 }
+
 </script>
+</body>
+</html>
