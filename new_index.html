@@ -5,6 +5,11 @@
 <title>Daves new Awesome Page</title>
 </header>
 
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+
 <html>
 <body>
 <section>
@@ -61,21 +66,22 @@ A text with a deleted part, and a new, inserted part<br>
 
 <button type="button" onclick="processText()">Try me!</button>
 
-<p id="demo"></p>
+<!--<p id="demo"></p>-->
 
+<table>
+<tr>
+	<th>Jan</th>
+	<th>Money</th>
+</tr>
 
+</table>
 
 <script>
 
 function processText(){
 
 	var x = document.getElementById("myText").value;
-	if (x=="demo") {
-	<p>entered Demo text</p>;
-}
-else{
-	<p>entered unknown text</p>;
-}
+
    document.getElementById("demo").innerHTML = x;
 }
 </script>
